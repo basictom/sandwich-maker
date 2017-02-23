@@ -1,6 +1,16 @@
 // Variable to hold the final price. Default to 0.
 var finalSandwichPrice = 0;
 
+var breadSelect = document.getElementById("bread-container");
+var meatSelect = document.getElementById("meat-container");
+var cheeseSelect = document.getElementById("cheese-container");
+var condimentSelect = document.getElementById("condiments-containers");
+var veggieSelect = document.getElementById("veggies-contianer");
+
+
+
+
+
 // Variable to hold topping that the user selects
 var selectedTopping;
 
