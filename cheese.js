@@ -12,7 +12,7 @@ var SandwichMaker = (function(maker) {
       "Munster": 0.25
     }
     // return cheesePrices;
-    var userCheeseSelect = options[cheese];
+    var userCheeseSelect = cheesePrices[cheese];
     console.log("Cheese", userCheeseSelect);
     SandwichMaker.addTopping(userCheeseSelect);
   };

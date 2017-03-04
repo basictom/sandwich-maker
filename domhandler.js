@@ -19,11 +19,15 @@ meatSelect.addEventListener("change", function(event) {
   var selectedMeat = event.target.value;
   SandwichMaker.addMeat(selectedMeat);
 });
-// cheeseSelect.addEventListener("change", function(event) {
-//   var selectedCheese = event.target.value;
-//   SandwichMaker.addCheese(selectedCheese);
-// });
+cheeseSelect.addEventListener("change", function(event) {
+  var selectedCheese = event.target.value;
+  SandwichMaker.addCheese(selectedCheese);
+});
 veggieSelect.addEventListener("change", function(event) {
   var userSelectVeggie = event.target.value;
   SandwichMaker.addVeggie(userSelectVeggie);
+});
+condimentSelect.addEventListener("change", function(event) {
+  var userSelectCondiment = event.target.value;
+  SandwichMaker.addCondiments(userSelectCondiment);
 });
