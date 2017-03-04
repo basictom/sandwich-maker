@@ -7,14 +7,15 @@ var SandwichMaker = (function(maker) {
   // Augment the original object with another method
   maker.addBread = function(bread) {
     var breadPrices = {
-      Lettuce: 0.30,
-      Tomato: 0.20,
-      Onion: 0.25,
-      Pickles: 0.75
+      "Pumpernickle": 1.10,
+      "Rye": .90,
+      "Sourdough": 2.09,
+      "Asiago": 1.87
     }
-    return breadPrices;
-    var userBreadSelect = options[bread];
+    // return breadPrices;
+    var userBreadSelect = breadPrices[bread];
     console.log("Bread", userBreadSelect);
+    SandwichMaker.addTopping(userBreadSelect);
   };
 
   // Return the new, augmented object with the new method on it
